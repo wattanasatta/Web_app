@@ -29,12 +29,15 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+  ],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/vue-lazyload'
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -44,6 +47,7 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@nuxtjs/moment',
     // Doc: https://github.com/nuxt-community/eslint-module
     // '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -63,6 +67,9 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  moment: {
+    locales: ['th']
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

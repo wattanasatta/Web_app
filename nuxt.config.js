@@ -10,7 +10,7 @@ export default {
    */
   target: 'static',
   router: {
-    base: '/exam/'
+    base: '/Web_app/'
   },
   /*
    ** Headers of the page
